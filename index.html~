@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html >
+<html ng-app="mapsApp">
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
@@ -10,7 +10,7 @@
   src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCHXI39kmvzGuad-RXq5fyVTUKMro4ZIdQ"></script>
   <script type="text/javascript" src="js/maps.js"></script>
 </head>
-<body ng-app="mapsApp">
+<body>
 <div ng-controller="MapCtrl">
     <div id="map"></div>
 <div id="list_container">
