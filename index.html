@@ -13,12 +13,25 @@
 <body ng-app="mapsApp">
 <div ng-controller="MapCtrl">
     <div id="map"></div>
+<div id="logo">
+  <h1>Route City</h1>
+  <h4>Route editor</h4>
+</div>
 <div id="list_container">
-    <div id="repeat" ng-repeat="marker in markers">
+  <div class="repeat" id="name">
+    <input type="text" id="nR" placeholder="Nombre ruta" ng-model="nombreRuta"/><input type="button" ng-click="guardar()" value="Guardar">
+  </div>
+    <div class="repeat" data-ng-repeat="marker in markers" ng-click="clickElemento($index)">
 <img src="resources/img/marker.png"/>
-         {{marker.position.lat}}
+         Punto {{$index+1}}
+    <div class="options">
+      <div class="delete"><input type="button" ng-click="delete($index)" value="Eliminar"/></div>
+      <div class="duplicate"><input type="button" ng-click="duplicate($index)" value="Duplicar"/></div>
     </div>
+    </div>
+    <input id="machete" type="button" ng-click="prueba()" value="Agregar"/>
 </div>
 </div>
+<a id="a"></a>
 </body>
 </html>
