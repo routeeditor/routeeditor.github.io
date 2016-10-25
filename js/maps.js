@@ -98,7 +98,7 @@
                 $scope.nodes=[];
                 var sw=$scope.map.getBounds().getSouthWest();
                 var ne=$scope.map.getBounds().getNorthEast();
-                $http.get('https://localhost:8080/Wondercode_RouteCity/route/cheaper/getNodesInBounds/'+sw.lat()+'/'+sw.lng()+'/'+ne.lat()+'/'+ne.lng())
+                $http.get('https://localhost:8443/Wondercode_RouteCity/route/cheaper/getNodesInBounds/'+sw.lat()+'/'+sw.lng()+'/'+ne.lat()+'/'+ne.lng())
                 .success(function(data) {
                     var l=data.nodes.length;
                     for(var i=0;i<l;i++){
