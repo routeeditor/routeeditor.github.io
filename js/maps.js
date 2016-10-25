@@ -3,7 +3,7 @@
           sampleApp.controller('MapCtrl',["$scope","$http", function ($scope,$http) {
               $http.defaults.useXDomain = true;
               delete $http.defaults.headers.common['X-Requested-With'];
-              $scope.wsURI='wss://192.168.0.35:8443/Wondercode_RouteCity/socket';
+              $scope.wsURI='wss://localhost:8443/Wondercode_RouteCity/socket';
               $scope.websocket = new WebSocket($scope.wsURI);
               $scope.websocket.onopen = function(e) {
                 alert('Conectado');
