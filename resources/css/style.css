@@ -16,7 +16,7 @@ body{
 }
 #logo{
   position:absolute;
-  background: #4285f4;
+  background: #160c27;
   top:0%;
   left:0%;
   height: 20%;
@@ -41,7 +41,7 @@ cursor:pointer;
 transition:all ease 0.4s;
 }
 .repeat:hover{
-  background:#4285f4;
+  background:#ff643c;
   color: #fff;
 }
 .repeat:hover a{
